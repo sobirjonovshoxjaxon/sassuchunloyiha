@@ -20,6 +20,8 @@ body{
         }
         
         .nav-item{
+            display: flex;
+            align-items: center;
 
             .nav-link{
                 color: white;
@@ -28,6 +30,10 @@ body{
             }
             .active{
                 color: orange;
+            }
+
+            i{
+                font-size: 18px;
             }
            
         }
@@ -379,6 +385,193 @@ body{
 
             img{
                 margin-left: 30px;
+            }
+
+        }
+    }
+ }
+
+ #contact-us{
+    margin: 70px 0 25px;
+
+    .row{
+
+        h3{
+            font: 800 45px sans-serif;
+            color: orange;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .contact-left{
+            background-image: url(images/img-10.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 60px 70px;
+
+            form{
+                text-align: center;
+                
+                input{
+                    width: 100%;
+                    padding: 15px 20px;
+                    border-radius: 40px;
+                    outline: none;
+                    border: none;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+
+                    &::placeholder{
+                        font: 500 20px sans-serif;
+                        text-transform: capitalize;
+
+                    }
+                }
+
+               textarea{
+                width: 100%;
+                border-radius: 40px;
+                padding: 30px 50px 50px 50px;
+                outline: none;
+                border: none;
+                font-size: 20px;
+
+                &::placeholder{
+                    font: 500 20px sans-serif;
+                    text-transform: capitalize;
+                }
+               }
+
+               button{
+                background-color: orange;
+                color: white;
+                border-radius: 40px;
+                border: none;
+                padding: 15px 50px;
+                font: 500 20px sans-serif;
+                text-transform: uppercase;
+                margin: 20px 0;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+                
+
+
+               }
+            }
+        }
+
+        .contact-right{
+            iframe{
+                padding: 0;
+            }
+            
+        }
+    }
+ }
+
+ #footer{
+    background-color: black;
+    color: white;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+
+    .about{
+        h3{
+            font: 700 30px sans-serif;
+            text-transform: capitalize;
+        }
+
+        p{
+            font: 500 17px sans-serif; 
+            margin-top: 15px;
+        }
+    }
+
+    .menu{
+        h3{
+            font: 700 30px sans-serif;
+            text-transform: capitalize;
+        }
+
+        .footer-menu{
+            text-transform: capitalize;
+            font: 500 17px sans-serif;
+            margin-top: 15px;
+            padding-left: 0;
+            
+            li{
+                list-style: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+                width: 35%;
+
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+
+    
+    .useful-link{
+
+        h3{
+            font: 700 30px sans-serif;
+            text-transform: capitalize; 
+        }
+
+        .secondly-menu{
+            text-transform: capitalize;
+            padding-left:0;
+            margin-top: 15px;
+
+            li{
+                list-style: none;
+            }
+            
+        }
+    }
+
+    .contact-us{
+
+        h3{
+            font: 700 30px sans-serif;
+            text-transform: capitalize; 
+        }
+
+        .thirdly-menu{
+            text-transform: capitalize;
+            padding-left: 0;
+            margin-top: 15px;
+
+            li{
+                list-style: none;
+                margin-bottom: 13px;
+                cursor: pointer;
+                width: 73%;
+                img{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 15px;
+
+                    &:hover{
+                        color: orange;
+                        
+                    }
+                }
+
+                transition: 0.7s;
+
+                &:hover{
+                    color: orange;
+                }
             }
 
         }

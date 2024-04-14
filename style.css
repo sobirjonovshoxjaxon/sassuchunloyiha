@@ -9,6 +9,10 @@ body .navbar .container-fluid {
 body .navbar .container-fluid button {
   background-color: white;
 }
+body .navbar .nav-item {
+  display: flex;
+  align-items: center;
+}
 body .navbar .nav-item .nav-link {
   color: white;
   font: 500 18px sans-serif;
@@ -16,6 +20,9 @@ body .navbar .nav-item .nav-link {
 }
 body .navbar .nav-item .active {
   color: orange;
+}
+body .navbar .nav-item i {
+  font-size: 18px;
 }
 body #home {
   background-attachment: fixed;
@@ -289,4 +296,148 @@ body #testimonial .monila h2 {
 }
 body #testimonial .monila h2 img {
   margin-left: 30px;
+}
+body #contact-us {
+  margin: 70px 0 25px;
+}
+body #contact-us .row h3 {
+  font: 800 45px sans-serif;
+  color: orange;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 80px;
+}
+body #contact-us .row .contact-left {
+  background-image: url(images/img-10.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 70px;
+}
+body #contact-us .row .contact-left form {
+  text-align: center;
+}
+body #contact-us .row .contact-left form input {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+body #contact-us .row .contact-left form input::-moz-placeholder {
+  font: 500 20px sans-serif;
+  text-transform: capitalize;
+}
+body #contact-us .row .contact-left form input::placeholder {
+  font: 500 20px sans-serif;
+  text-transform: capitalize;
+}
+body #contact-us .row .contact-left form textarea {
+  width: 100%;
+  border-radius: 40px;
+  padding: 30px 50px 50px 50px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+body #contact-us .row .contact-left form textarea::-moz-placeholder {
+  font: 500 20px sans-serif;
+  text-transform: capitalize;
+}
+body #contact-us .row .contact-left form textarea::placeholder {
+  font: 500 20px sans-serif;
+  text-transform: capitalize;
+}
+body #contact-us .row .contact-left form button {
+  background-color: orange;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  padding: 15px 50px;
+  font: 500 20px sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+body #contact-us .row .contact-left form button:hover {
+  background-color: white;
+  color: black;
+}
+body #contact-us .row .contact-right iframe {
+  padding: 0;
+}
+body #footer {
+  background-color: black;
+  color: white;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+}
+body #footer .about h3 {
+  font: 700 30px sans-serif;
+  text-transform: capitalize;
+}
+body #footer .about p {
+  font: 500 17px sans-serif;
+  margin-top: 15px;
+}
+body #footer .menu h3 {
+  font: 700 30px sans-serif;
+  text-transform: capitalize;
+}
+body #footer .menu .footer-menu {
+  text-transform: capitalize;
+  font: 500 17px sans-serif;
+  margin-top: 15px;
+  padding-left: 0;
+}
+body #footer .menu .footer-menu li {
+  list-style: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 35%;
+}
+body #footer .menu .footer-menu li:hover {
+  color: orange;
+}
+body #footer .useful-link h3 {
+  font: 700 30px sans-serif;
+  text-transform: capitalize;
+}
+body #footer .useful-link .secondly-menu {
+  text-transform: capitalize;
+  padding-left: 0;
+  margin-top: 15px;
+}
+body #footer .useful-link .secondly-menu li {
+  list-style: none;
+}
+body #footer .contact-us h3 {
+  font: 700 30px sans-serif;
+  text-transform: capitalize;
+}
+body #footer .contact-us .thirdly-menu {
+  text-transform: capitalize;
+  padding-left: 0;
+  margin-top: 15px;
+}
+body #footer .contact-us .thirdly-menu li {
+  list-style: none;
+  margin-bottom: 13px;
+  cursor: pointer;
+  width: 73%;
+  transition: 0.7s;
+}
+body #footer .contact-us .thirdly-menu li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+body #footer .contact-us .thirdly-menu li img:hover {
+  color: orange;
+}
+body #footer .contact-us .thirdly-menu li:hover {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */
