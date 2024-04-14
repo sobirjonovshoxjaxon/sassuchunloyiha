@@ -213,6 +213,7 @@ body #services .container .cards .card {
   color: white;
   text-align: center;
   transition: 0.5s;
+  border: 4px solid green;
 }
 body #services .container .cards .card:hover {
   background-color: white;
@@ -225,7 +226,7 @@ body #services .container .cards .card:hover p {
 }
 body #services .container .cards .card .image {
   padding: 40px 45px;
-  border: 2px solid green;
+  border: 2px solid red;
 }
 body #services .container .cards .card .image img {
   width: 60px;
@@ -242,8 +243,7 @@ body #services .container .cards .card .image p {
   transition: 0.5s;
 }
 body #services .container .cards .card .btn {
-  border: 2px solid red;
-  opacity: 1;
+  border: 2px solid black;
 }
 body #services .container .cards .card .btn a {
   background-color: black;
@@ -311,7 +311,6 @@ body #contact-us .row .contact-left {
   background-image: url(images/img-10.png);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 60px 70px;
 }
 body #contact-us .row .contact-left form {
   text-align: center;
@@ -365,7 +364,7 @@ body #contact-us .row .contact-left form button:hover {
   color: black;
 }
 body #contact-us .row .contact-right iframe {
-  padding: 0;
+  border: 2px solid red;
 }
 body #footer {
   background-color: black;
