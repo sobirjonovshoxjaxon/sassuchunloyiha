@@ -1,6 +1,13 @@
 body .navbar {
-  height: 12vh;
+  min-height: 12vh;
   padding: 0 1% 0 1%;
+}
+body .navbar .container-fluid {
+  display: flex;
+  align-items: center;
+}
+body .navbar .container-fluid button {
+  background-color: white;
 }
 body .navbar .nav-item .nav-link {
   color: white;
@@ -49,60 +56,118 @@ body #home .container a:hover {
   color: white;
   background-color: orange;
 }
-body #about-us {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
 body #about-us .container {
+  margin: 100px auto 100px auto;
+}
+body #about-us .container .row {
   display: flex;
-  height: 570px;
   justify-content: space-between;
   align-items: center;
 }
-body #about-us .container .about-us-text {
-  width: 50%;
-}
-body #about-us .container .about-us-image {
-  width: 45%;
-  box-shadow: 0 0 10px black;
-  position: relative;
-}
-body #about-us .container .about-us-image img {
-  width: 100%;
-  height: 100%;
-}
-body #about-us .container .about-us-image .black-line {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 3px solid black;
-  bottom: -40px;
-  left: -40px;
-  z-index: -1;
-}
-body #about-us .container .about-us-text h3 {
-  font: 700 38px sans-serif;
-  text-transform: uppercase;
+body #about-us .container .row .left h3 {
+  font: 800 40px sans-serif;
   color: orange;
-  margin-bottom: 30px;
+  text-transform: uppercase;
 }
-body #about-us .container .about-us-text p {
-  font: 500 19px sans-serif;
+body #about-us .container .row .left p {
+  font: 500 18px sans-serif;
 }
-body #about-us .container .about-us-text p:nth-child(2) {
+body #about-us .container .row .left p:nth-child(2) {
   width: 90%;
 }
-body #about-us .container .about-us-text a {
-  text-decoration: none;
+body #about-us .container .row .left p:nth-child(3) {
+  width: 90%;
+}
+body #about-us .container .row .left a {
   background-color: black;
   color: white;
-  font: 700 20px sans-serif;
-  padding: 15px 33px;
   text-transform: capitalize;
-  cursor: pointer;
+  font: bold 20px sans-serif;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
-body #about-us .container .about-us-text a:hover {
+body #about-us .container .row .left a:hover {
+  color: white;
+  background-color: orange;
+}
+body #about-us .container .row .right {
+  position: relative;
+}
+body #about-us .container .row .right img {
+  height: 550px;
+  width: 103%;
+  margin-left: -9px;
+  box-shadow: 0 0 10px black;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #about-us .container .row .right .black-line {
+  position: absolute;
+  border: 4px solid black;
+  height: 100%;
+  width: 100%;
+  left: -20px;
+  bottom: -20px;
+  z-index: -1;
+}
+body #our-gallery .container {
+  margin-bottom: 100px;
+}
+body #our-gallery .container .row .our-text h3 {
+  font: 800 40px sans-serif;
+  color: orange;
+  text-transform: uppercase;
+  text-align: center;
+}
+body #our-gallery .container .row .our-text p {
+  font: 500 18px sans-serif;
+  text-align: center;
+  margin: 35px 0 55px 0;
+}
+body #our-gallery .container .row .pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+body #our-gallery .container .row .pictures .picture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body #our-gallery .container .row .pictures .picture img {
+  width: 100%;
+  height: 100%;
+}
+body #our-gallery .container .row .pictures .picture .icon {
+  position: absolute;
+  background-image: linear-gradient(rgba(199, 197, 197, 0.5), rgba(199, 197, 197, 0.5));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s;
+}
+body #our-gallery .container .row .pictures .picture .icon:hover {
+  opacity: 1;
+}
+body #our-gallery .container .row .pictures .picture .icon i {
+  font-size: 50px;
+  color: black;
+}
+body #our-gallery .container .row a {
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  font: bold 20px sans-serif;
+  transition: 0.3s;
+  width: 15%;
+  margin: 60px auto 0 auto;
+}
+body #our-gallery .container .row a:hover {
   color: white;
   background-color: orange;
 }/*# sourceMappingURL=style.css.map */
